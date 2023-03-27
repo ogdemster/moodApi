@@ -1,0 +1,12 @@
+### GET REQUEST
+GET http://127.0.0.1:5000
+
+### POST REQUEST
+POST http://127.0.0.1:5000/api/v1/data HTTP/1.1
+Content-Type: application/json
+
+{
+    "data":   {
+        "text": "this works faster then my computer"
+    }
+}
