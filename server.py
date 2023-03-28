@@ -10,9 +10,6 @@ CORS(app)
 # Load a pre-trained sentiment analysis model
 model = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
 
-# Use the model to analyze some text
-result = model("I love working with Hugging Face!")
-
 @app.route('/')
 def hello():
     return 'Hello, World!'
